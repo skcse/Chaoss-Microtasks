@@ -66,3 +66,9 @@ $ mordred -c config.cfg
 And that's it. Point your browser to http://localhost:5601, assuming your Kibiter is deployed to serve requests in the standard port (5601). You'll see the produced dashboard.
 
 Running mordred command can take time according to the organisation selected, so keep patience
+
+### Results
+
+- There is separate folder for each microtask.
+- These folder contain a python script, menu.yaml and organisation folder.
+- And organisation folder contains screenshots, config.cfg and projects.json file produced by python script.
