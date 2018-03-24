@@ -72,3 +72,33 @@ Running mordred command can take time according to the organisation selected, so
 - There is separate folder for each microtask.
 - These folder contain a python script, menu.yaml and organisation folder.
 - And organisation folder contains screenshots, config.cfg and projects.json file produced by python script.
+
+## Microtask -2
+Produce a Python script that adds a new GitHub repository (git and GitHub issues / pull requests) to a given set of Mordred configuration files. Test it by adding at least two repositories (in two separate steps) to a GrimoireLab dashboard, producing screenshots of the results.
+
+This script adds repositories in the given set of mordred configuration file, or in other terms we can say this python script modifies the projects.json file of the given organisation.
+
+For this script to run we requires mordred configuration file and projects.json file which was generated in microtask-1
+
+After running this script the projects.json file will be modified, hence for generating dashboard you can see the microtask1 readme (Run, how to create a dashboard using the generated file)
+
+
+### How to run this script
+commands for adding 1st repository, for this let say organisation name is 'ogc' and repository name is 'deploy'
+```
+$ python3 task2.py
+Enter organisation name
+bytedeco
+Enter name of repository
+javacpp
+Enter the name of json file like 'project.json'
+ projects_so-fancy.json
+projects_so-fancy.json
+repository successfully added
+
+
+```
+
+### Results
+- Task-2 folder contain three folder namely 'default dashboard','1st repo added','2nd repo added'.
+- These folder contains screenshots and their corresponding mordred configuration files.
