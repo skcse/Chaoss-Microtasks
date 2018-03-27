@@ -102,3 +102,36 @@ repository successfully added
 ### Results
 - Task-2 folder contain three folder namely 'default dashboard','1st repo added','2nd repo added'.
 - These folder contains screenshots and their corresponding mordred configuration files.
+
+## Microtask -2
+Produce a Python script that removes a GitHub repository (git and GitHub issues / pull requests) from a working GrimoireLab dashboard, by modifying the needed Mordred configuration files, and fixing the raw and enriched indexes to remove the items for the removed repository. Test it by removing at least two repositories (in two separate steps) from a GrimoireLab dashboard, producing screenshots of the results.
+
+For this script to run you need config file which was generated in microtask-1 and both of this file and script should be in the same folder.
+Then this script will show the repository which are present in dashboard and then you will be asked for chosing the index for deleting that repository
+After that it will show the index of git and github which are present in dashboard. 
+### How to run this script
+Demo command is show for this script
+```
+(grimoirelab) $ python3 task3.py
+Enter the name of config file which is associated with current dashboard
+config_bytedeco.cfg
+0 https://github.com/bytedeco/javacpp-presets
+1 https://github.com/bytedeco/javacpp
+2 https://github.com/bytedeco/javacv
+3 https://github.com/bytedeco/javacv-examples
+4 https://github.com/bytedeco/sbt-javacv
+5 https://github.com/bytedeco/procamcalib
+6 https://github.com/bytedeco/procamtracker
+7 https://github.com/bytedeco/sbt-javacpp
+8 https://github.com/bytedeco/bytedeco.github.io
+9 https://github.com/bytedeco/sample-projects
+
+Enter the Index of repository which you want to delete
+2
+git_test
+github_test
+git_test-raw
+github_test-raw
+Repository deleted successfully
+
+```
