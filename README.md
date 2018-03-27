@@ -103,7 +103,7 @@ repository successfully added
 - Task-2 folder contain three folder namely 'default dashboard','1st repo added','2nd repo added'.
 - These folder contains screenshots and their corresponding mordred configuration files.
 
-## Microtask -2
+## Microtask -3
 Produce a Python script that removes a GitHub repository (git and GitHub issues / pull requests) from a working GrimoireLab dashboard, by modifying the needed Mordred configuration files, and fixing the raw and enriched indexes to remove the items for the removed repository. Test it by removing at least two repositories (in two separate steps) from a GrimoireLab dashboard, producing screenshots of the results.
 
 For this script to run you need config file which was generated in microtask-1 and both of this file and script should be in the same folder.
