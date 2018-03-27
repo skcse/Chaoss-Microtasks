@@ -43,7 +43,7 @@ Before procceding, i will suggest you to read [A GrimoireLab dashboard in one st
 these command is used assuming you have created a virtual envirnoment as mentioned above.
 ```
 
-# for initializing sortinghat database, where 'user' and 'XXX' is user name and passord of mysql database.
+# for initializing sortinghat database, where 'user' and 'XXX' is user name and passord of mysql database. 'shdb' is database name
 $ sortinghat -u user -p XXX  init shdb
  
 # Docker container run Elasticsearch, MariaDB, Kibiter and also Grimoirelab tools and keep the mordred config file unconfigure.
@@ -84,7 +84,7 @@ After running this script the projects.json file will be modified, hence for gen
 
 
 ### How to run this script
-commands for adding 1st repository, for this let say organisation name is 'ogc' and repository name is 'deploy'
+Commands for adding repository, for this let say organisation name is 'bytedeco' and repository name is 'javacpp' and we are adding this repository to a organisation named 'so-fancy'. so, the projects.json file is 'projects_so-fancy.json'.This json file was created in microtask-1 
 ```
 $ python3 task2.py
 Enter organisation name
@@ -92,16 +92,19 @@ bytedeco
 Enter name of repository
 javacpp
 Enter the name of json file like 'project.json'
- projects_so-fancy.json
 projects_so-fancy.json
 repository successfully added
 
 
+# For screenshot, i have added repository 'bytedeco/javacpp' and 'fastlane/ci'
 ```
 
 ### Results
-- Task-2 folder contain three folder namely 'default dashboard','1st repo added','2nd repo added'.
-- These folder contains screenshots and their corresponding mordred configuration files.
+- Task-2 folder contain three folder namely 'initial dashboard','1st repo added','2nd repo added'.
+- Initial dashboard folder contains screenshots and mordred config files 
+- Folder '1st repo added' contains screenshots and mordred config files after a repository of another organisation is added.
+- Folder '2nd repo added' contains screenshots and mordred config files after 2nd repository of another organisation is added.
+
 
 ## Microtask -3
 Produce a Python script that removes a GitHub repository (git and GitHub issues / pull requests) from a working GrimoireLab dashboard, by modifying the needed Mordred configuration files, and fixing the raw and enriched indexes to remove the items for the removed repository. Test it by removing at least two repositories (in two separate steps) from a GrimoireLab dashboard, producing screenshots of the results.
@@ -110,7 +113,7 @@ For this script to run you need config file which was generated in microtask-1 a
 Then this script will show the repository which are present in dashboard and then you will be asked for chosing the index for deleting that repository
 After that it will show the index of git and github which are present in dashboard. 
 ### How to run this script
-Demo command is show for this script
+Commands for using for this script, assuming config file which was generated in microtask-1 is 'config_bytedeco.cfg'
 ```
 (grimoirelab) $ python3 task3.py
 Enter the name of config file which is associated with current dashboard
@@ -134,4 +137,11 @@ git_test-raw
 github_test-raw
 Repository deleted successfully
 
+# For screenshot, i have deleted the 2nd and 1st repository 
+
 ```
+
+### Results
+- Task-3 folder contains mordred configuration files, script and three folder for storing screenshots
+- Folder 'Initial dashboard' contain screeenshot of initial dashboard.
+- Folder 'Second repo deleted' contain screeenshot of dashboard after second repository is deleted.
